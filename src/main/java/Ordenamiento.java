@@ -47,6 +47,31 @@ public class Ordenamiento {
         }
     }
     
+    
+      /**
+     * Ordena un arreglo de enteros utilizando el algoritmo Insertion Sort.
+     * 
+     * @param arreglo El arreglo de enteros a ordenar.
+     * 
+     * Precondiciones: El arreglo no debe ser nulo.
+     * Postcondiciones: El arreglo será ordenado en orden ascendente.
+     */
+    
+    
+    public static void insertionSort(int[] arreglo) {
+        if (arreglo == null) {
+            throw new IllegalArgumentException("El arreglo no puede ser nulo.");
+        }
+        for (int i = 1; i < arreglo.length; i++) {
+            int clave = arreglo[i];
+            int j = i - 1;
+            while (j >= 0 && arreglo[j] > clave) {
+                arreglo[j + 1] = arreglo[j];
+                j--;
+            }
+            arreglo[j + 1] = clave;
+        }
+    }
      
     
     /**

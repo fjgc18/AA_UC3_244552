@@ -1,4 +1,5 @@
 
+
 import java.util.Arrays;
 
 /*
@@ -29,6 +30,25 @@ public class Pruebas {
 
         int indice2 = Busquedas.busquedaBinaria(arreglo, 3);
         System.out.println("Búsqueda Binaria (3): " + indice2);
+        
+        
+          // Prueba de Insertion Sort
+        int[] arregloInsertion = arreglo.clone();
+        Ordenamiento.insertionSort(arregloInsertion);
+        System.out.println("\nArreglo ordenado con Insertion Sort:");
+        for (int num : arregloInsertion) {
+            System.out.print(num + " ");
+        }
     }
-}
+        
+    }
+    
+    
+      /**
+     * Método principal para pruebas del algoritmo Insertion Sort.
+     *
+     * @param args Argumentos de línea de comandos (no se utilizan).
+     */
+   
+
 
