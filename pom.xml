@@ -11,4 +11,5 @@
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>AA_UC3_244552</exec.mainClass>
     </properties>
+    <name>AA_UC2_244552</name>
 </project>

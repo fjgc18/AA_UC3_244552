@@ -39,16 +39,21 @@ public class Pruebas {
         for (int num : arregloInsertion) {
             System.out.print(num + " ");
         }
+        
+        
+        // Prueba de Selection Sort
+        int[] arreglo3 = {64, 25, 12, 22, 11};
+        System.out.println("\nArreglo original para Selection Sort: " + Arrays.toString(arreglo3));
+
+        Ordenamiento.selectionSort(arreglo3);
+
+        System.out.println("Arreglo ordenado con Selection Sort: " + Arrays.toString(arreglo3));
     }
         
     }
     
     
-      /**
-     * Método principal para pruebas del algoritmo Insertion Sort.
-     *
-     * @param args Argumentos de línea de comandos (no se utilizan).
-     */
+     
    
 
 

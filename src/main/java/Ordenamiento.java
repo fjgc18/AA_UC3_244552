@@ -72,6 +72,51 @@ public class Ordenamiento {
             arreglo[j + 1] = clave;
         }
     }
+    
+    
+/**
+     * Ordena un arreglo de números enteros en orden ascendente usando el algoritmo Selection Sort.
+     *
+     * Objetivo: Encontrar el elemento mínimo de un arreglo y colocarlo en su posición correcta.
+     *
+     * Lógica: Se divide el arreglo en dos partes: una ordenada y otra no ordenada. En cada iteración, se selecciona el elemento mínimo de la parte no ordenada y se intercambia con el primer elemento de esta parte.
+     *
+     * Condiciones iniciales: El arreglo no debe ser nulo. Si está vacío, no se realizan operaciones.
+     *
+     * Ejemplo de flujo:
+     * Entrada: [64, 25, 12, 22, 11]
+     * Iteración 1: [11, 25, 12, 22, 64]
+     * Iteración 2: [11, 12, 25, 22, 64]
+     * Iteración 3: [11, 12, 22, 25, 64]
+     * Salida: [11, 12, 22, 25, 64]
+     *
+     * Complejidad:
+     * - Mejor caso: O(n^2)
+     * - Peor caso: O(n^2)
+     *
+     * @param arreglo El arreglo de números enteros a ordenar.
+     */
+    public static void selectionSort(int[] arreglo) {
+        if (arreglo == null || arreglo.length == 0) {
+            return; // Si el arreglo es nulo o está vacío, no se realiza ninguna operación.
+        }
+
+        int n = arreglo.length;
+        for (int i = 0; i < n - 1; i++) {
+            // Encontrar el índice del elemento mínimo
+            int minIdx = i;
+            for (int j = i + 1; j < n; j++) {
+                if (arreglo[j] < arreglo[minIdx]) {
+                    minIdx = j;
+                }
+            }
+            // Intercambiar el elemento mínimo con el primer elemento
+            int temp = arreglo[minIdx];
+            arreglo[minIdx] = arreglo[i];
+            arreglo[i] = temp;
+        }
+    }
+  
      
     
     /**
