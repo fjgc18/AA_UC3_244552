@@ -37,7 +37,7 @@ public class Ordenamiento {
      * Precondición:El arreglo no debe ser nulo.
      * @param inicio  Índice inicial del segmento a ordenar.
      * @param fin     Índice final del segmento a ordenar.
-     * Postcondición:El segmento del arreglo estará ordenado.
+     * Postcondición:El segmento del arreglo estará ordenado
      */
     public static void quickSort(int[] arreglo, int inicio, int fin) {
         if (inicio < fin) {
